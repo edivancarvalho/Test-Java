@@ -1,0 +1,23 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/dev-db
+    username: postgres
+    password: postgres
+
+#spring:
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#    database-platform: org.hibernate.dialect.PostgreSQLDialect
+#  datasource:
+#    driverClassName: org.postgresql.Driver
+#    url: jdbc:postgresql://${PROD_DB_HOST}:${PROD_DB_PORT}/${PROD_DB_NAME}
+#    username: ${PROD_DB_USERNAME}
+#    password: ${PROD_DB_PASSWORD}
